@@ -1,0 +1,26 @@
+### CADASTRANDO MOUSE COM FOTO
+POST http://localhost:8080/produtos HTTP/1.1
+Accept: */*
+Accept-Encoding: deflate, gzip, x-gzip
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc5MTU4OTg4MywiZXhwIjoxNzkxNjc2MjgzfQ.O_rbyhv-CgHKb1eWZfCpKaEVXridesjpsjkZrx_T5tg
+Content-Type: multipart/form-data; boundary=----WebBoundary
+User-Agent: IntelliJ HTTP Request/IntelliJ IDEA 2026.2.3
+Content-Length: 246518
+
+------WebBoundary
+Content-Disposition: form-data; name="produto"; filename="produto.json"
+Content-Type: application/json
+
+{
+  "nome": "Mouse",
+  "preco": 10,
+  "categoria": {
+    "id": 1
+  }
+}
+------WebBoundary
+Content-Disposition: form-data; name="foto"; filename="mouse.png"
+Content-Type: image/png
+
+Binary data(size: 246,19 kB, original file: C:\Users\aluno\Downloads\mouse.png)
+------WebBoundary--

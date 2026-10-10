@@ -1,0 +1,50 @@
+### listando produtos
+GET http://localhost:8080/produtos
+Accept: application/json
+
+### cadastrando teclado
+POST http://localhost:8080/produtos
+Content-Type: application/json
+
+{
+  "nome": "teclado",
+  "preco": 100,
+  "categoria": {
+    "id": 1
+  }
+}
+
+### alterando o produto de id 1
+PUT http://localhost:8080/produtos/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2FxdWltIiwiaWF0IjoxNzkwODUxNzc1LCJleHAiOjE3OTA5MzgxNzV9.FtM6L3yivOveLpEfrhJr9Q_3ec-SBDZ0lESv-9hATpQ
+Content-Type: application/json
+
+{
+  "nome": "teclado Slim",
+  "preco": 100,
+  "categoria": {
+    "id": 1
+  }
+}
+
+### excluindo o produto de id 2
+DELETE http://localhost:8080/produtos/2
+
+
+### filtro nome
+GET http://localhost:8080/produtos/filtro-nome?nome=tec
+
+### filtro preco
+GET http://localhost:8080/produtos/filtro-preco?valor=500
+
+### listando produto pelo id
+GET http://localhost:8080/produtos/1
+
+### teste validação de cadastro
+POST http://localhost:8080/produtos
+Content-Type: application/json
+
+{
+  "nome": "",
+  "preco": -100
+}

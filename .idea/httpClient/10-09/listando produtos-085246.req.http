@@ -1,0 +1,7 @@
+### listando produtos
+GET http://localhost:8080/produtos HTTP/1.1
+Accept: */*
+Accept-Encoding: deflate, gzip, x-gzip
+User-Agent: IntelliJ HTTP Request/IntelliJ IDEA 2026.2.3
+Content-Length: 0
+

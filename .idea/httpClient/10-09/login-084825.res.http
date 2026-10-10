@@ -1,0 +1,15 @@
+### login
+POST http://localhost:8080/login HTTP/1.1
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+content-type: application/json
+date: Fri, 09 Oct 2026 23:48:25 GMT
+expires: 0
+pragma: no-cache
+transfer-encoding: chunked
+x-content-type-options: nosniff
+x-frame-options: DENY
+x-xss-protection: 0
+
+{
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc5MTU4OTcwNSwiZXhwIjoxNzkxNjc2MTA1fQ.YftUyehRMrSXNDc53-JqDlIB-6ocf3Mvj08zGTPlZaA"
+}

@@ -1,0 +1,2 @@
+### listando produtos
+GET http://localhost:8080/produtos

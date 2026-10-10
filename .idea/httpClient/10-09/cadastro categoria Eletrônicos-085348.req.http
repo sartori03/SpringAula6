@@ -1,0 +1,12 @@
+### cadastro categoria Eletrônicos
+POST http://localhost:8080/categorias HTTP/1.1
+Accept: */*
+Accept-Encoding: deflate, gzip, x-gzip
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2FxdWltIiwiaWF0IjoxNzkwODUxNzc1LCJleHAiOjE3OTA5MzgxNzV9.FtM6L3yivOveLpEfrhJr9Q_3ec-SBDZ0lESv-9hATpQ
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Request/IntelliJ IDEA 2026.2.3
+Content-Length: 26
+
+{
+  "nome": "Vestuário"
+}

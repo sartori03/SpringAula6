@@ -1,0 +1,35 @@
+
+### cadastro categoria Eletrônicos
+POST http://localhost:8080/categorias
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2FxdWltIiwiaWF0IjoxNzkwODUxNzc1LCJleHAiOjE3OTA5MzgxNzV9.FtM6L3yivOveLpEfrhJr9Q_3ec-SBDZ0lESv-9hATpQ
+Content-Type: application/json
+
+{
+  "nome": "Vestuário"
+}
+
+### listando categorias
+GET http://localhost:8080/categorias
+
+### teste cadastro categoria em branco
+POST http://localhost:8080/categorias
+Content-Type: application/json
+
+{
+  "nome": ""
+}
+
+### alterando a categoria de id 1
+PUT http://localhost:8080/categorias/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2FxdWltIiwiaWF0IjoxNzkwODUxNzc1LCJleHAiOjE3OTA5MzgxNzV9.FtM6L3yivOveLpEfrhJr9Q_3ec-SBDZ0lESv-9hATpQ
+Content-Type: application/json
+
+{
+  "nome": "Eletrônicos"
+}
+
+### excluindo a categoria de id 2
+DELETE http://localhost:8080/categorias/2
+
+### filtro de categoria por nome
+GET http://localhost:8080/categorias/filtro-nome?nome=Rou
